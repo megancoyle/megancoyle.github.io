@@ -14,7 +14,7 @@ p {
   color: #595959; }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .project {
@@ -88,7 +88,9 @@ header {
 
 .icon {
   width: 150px;
-  padding-bottom: 4em; }
+  padding-bottom: 4em;
+  -webkit-animation-name: pulse;
+  animation-name: pulse; }
 
 .center {
   text-align: center; }
@@ -118,7 +120,7 @@ header {
     padding-top: 20px; }
 
 .project {
-  background-color: black;
+  background-color: #595959;
   padding-top: 4em;
   padding-bottom: 4em;
   text-align: center; }
@@ -126,16 +128,25 @@ header {
     color: white;
     font-size: 3em;
     text-align: center;
-    font-family: "Covered By Your Grace", cursive; }
+    font-family: "Covered By Your Grace", cursive;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .project img {
+    display: block;
+    width: 450px; }
 
 #web li {
-  background: white;
-  min-width: 200px;
-  height: 200px;
+  background: #029de5;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
   display: inline-block;
   list-style: none;
   margin: 10px;
-  padding: 10px; }
+  border: 3px solid white; }
+  #web li p {
+    color: white;
+    font-size: 1em; }
 
 .resume-list {
   -webkit-columns: 110px 3;
@@ -164,5 +175,26 @@ footer {
   padding: 10px; }
   .social:hover {
     opacity: .8; }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
 
 /*# sourceMappingURL=style.css.map */

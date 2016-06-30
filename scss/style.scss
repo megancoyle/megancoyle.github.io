@@ -9,7 +9,7 @@ $covered-your-grace: 'Covered By Your Grace', cursive;
 $montserrat: 'Montserrat', sans-serif;
 
 // Width Variables
-$desktop-width: 900px;
+$desktop-width: 1000px;
 
 // Color Variables
 $light-color: white;
@@ -122,6 +122,8 @@ header {
 .icon {
   width: 150px;
   padding-bottom: 4em;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 .center {
   text-align: center;
@@ -155,7 +157,7 @@ header {
   }
 }
 .project {
-  background-color: $dark-color;
+  background-color: $gray-color;
   padding-top: 4em;
   padding-bottom: 4em;
   text-align: center;
@@ -164,17 +166,28 @@ header {
     font-size: 3em;
     text-align: center;
     font-family: $covered-your-grace;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  img {
+    display: block;
+    width: 450px;
   }
 }
 #web {
   li {
-    background: white;
-    min-width: 200px;
-    height: 200px;
+    background: $accent-color;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
     display: inline-block;
     list-style: none;
     margin: 10px;
-    padding: 10px;
+    border: 3px solid $light-color;
+    p {
+      color: $light-color;
+      font-size: 1em;
+    }
   }
 }
 .resume-list {
@@ -206,4 +219,39 @@ footer {
     &:hover {
       opacity: .8;
     }
+}
+
+// Animations
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
