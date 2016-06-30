@@ -17,6 +17,9 @@ p {
   max-width: 900px;
   margin: 0 auto; }
 
+.project {
+  background-color: black; }
+
 header {
   background: black;
   height: 50px;
@@ -31,7 +34,8 @@ header {
   header h1 {
     font-family: "Montserrat", sans-serif;
     float: left;
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-bottom: 5px; }
   header nav {
     float: right;
     margin-top: 15px; }
@@ -46,7 +50,7 @@ header {
 .banner {
   background-image: url(../assets/megan-coyle-portrait.jpg);
   background-repeat: no-repeat;
-  height: 500px; }
+  height: 600px; }
 
 .banner-text {
   margin-left: 40%; }
@@ -54,7 +58,7 @@ header {
     text-align: left;
     margin-top: 0; }
   .banner-text h1 {
-    padding-top: 150px;
+    padding-top: 5em;
     font-size: 50px;
     margin-bottom: 0; }
   .banner-text h2 {
@@ -90,9 +94,9 @@ header {
   text-align: center; }
 
 .solid {
-  background-color: #81d6fe; }
+  background-color: #029de5; }
   .solid h2 {
-    color: #0279b1;
+    color: white;
     font-size: 4em;
     margin-top: 0;
     padding-top: 60px;
@@ -101,5 +105,49 @@ header {
 .text {
   padding-top: 4em;
   padding-bottom: 4em; }
+  .text a {
+    text-decoration: none; }
+  .text h3 {
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0; }
+  .text h4 {
+    font-size: 1.5em;
+    padding-top: 20px; }
+
+.project {
+  background-color: black;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+.resume-list {
+  -webkit-columns: 110px 3;
+  -moz-columns: 110px 3;
+  columns: 110px 3;
+  list-style: none; }
+  .resume-list li {
+    line-height: 1.5; }
+
+ul.resume-list {
+  margin-left: 0;
+  font-size: 1em;
+  color: #595959; }
+
+.fa {
+  padding-right: 10px; }
+
+footer {
+  background: black;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center; }
+
+.social {
+  width: 50px;
+  padding: 10px; }
+  .social:hover {
+    opacity: .8; }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,9 @@ p {
   max-width: $desktop-width;
   margin: 0 auto;
 }
+.project {
+  background-color: $dark-color;
+}
 
 header {
   background: $dark-color;
@@ -56,6 +59,7 @@ header {
     font-family: $montserrat;
     float: left;
     margin-top: 5px;
+    margin-bottom: 5px;
   }
   nav {
     float: right;
@@ -74,7 +78,7 @@ header {
 .banner {
   background-image: url(../assets/megan-coyle-portrait.jpg);
   background-repeat: no-repeat;
-  height: 500px;
+  height: 600px;
 }
 .banner-text {
   margin-left: 40%;
@@ -83,7 +87,7 @@ header {
     margin-top: 0;
   }
   h1 {
-    padding-top: 150px;
+    padding-top: 5em;
     font-size: 50px;
     margin-bottom: 0;
   }
@@ -123,9 +127,9 @@ header {
   text-align: center;
 }
 .solid {
-  background-color: $accent-lighter;
+  background-color: $accent-color;
   h2 {
-    color: $accent-darker;
+    color: $light-color;
     font-size: 4em;
     margin-top: 0;
     padding-top: 60px;
@@ -135,4 +139,53 @@ header {
 .text {
   padding-top: 4em;
   padding-bottom: 4em;
+  a {
+    text-decoration: none;
+  }
+  h3 {
+    font-family: $covered-your-grace;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  h4 {
+    font-size: 1.5em;
+    padding-top: 20px;
+  }
+}
+.project {
+  background-color: $dark-color;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.resume-list {
+    -webkit-columns: 110px 3;
+    -moz-columns: 110px 3;
+    columns: 110px 3;
+	list-style: none;
+  li {
+    line-height: 1.5;
+  }
+}
+ul.resume-list {
+	margin-left: 0;
+  font-size: 1em;
+  color: $gray-color;
+	}
+.fa {
+    padding-right: 10px;
+}
+footer {
+  background: $dark-color;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.social {
+    width: 50px;
+    padding: 10px;
+    &:hover {
+      opacity: .8;
+    }
 }
