@@ -1,5 +1,77 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
-h1 {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+body {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2 {
   font-family: "Covered By Your Grace", cursive; }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto; }
+
+header {
+  background: black;
+  height: 50px;
+  text-transform: lowercase; }
+  header a {
+    color: white;
+    text-decoration: none; }
+    header a:hover {
+      opacity: .8; }
+  header h1 {
+    font-family: "Montserrat", sans-serif;
+    float: left;
+    margin-top: 5px; }
+  header nav {
+    float: right;
+    margin-top: 15px; }
+    header nav a {
+      margin-right: 20px; }
+      header nav a:last-child {
+        margin-right: 0; }
+
+.banner-background {
+  background-color: #faf7f2; }
+
+.banner {
+  background-image: url(../assets/megan-coyle-portrait.jpg);
+  background-repeat: no-repeat;
+  height: 500px; }
+
+.banner-text {
+  margin-left: 40%; }
+  .banner-text h1, .banner-text h2 {
+    text-align: left;
+    margin-top: 0; }
+  .banner-text h1 {
+    padding-top: 150px;
+    font-size: 50px;
+    margin-bottom: 0; }
+  .banner-text h2 {
+    font-size: 30px;
+    font-weight: lighter; }
+
+.btn {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 0.5em;
+  outline: medium none;
+  padding: 0.5em 0.6em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+  transition: all 0.2s ease 0s;
+  vertical-align: middle;
+  color: black; }
+  .btn:hover {
+    background: #029de5;
+    border: 1px solid #029de5;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
