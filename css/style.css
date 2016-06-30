@@ -7,6 +7,12 @@ body {
 h1, h2 {
   font-family: "Covered By Your Grace", cursive; }
 
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: #595959; }
+
 .wrapper {
   max-width: 900px;
   margin: 0 auto; }
@@ -14,7 +20,9 @@ h1, h2 {
 header {
   background: black;
   height: 50px;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  position: fixed;
+  width: 100%; }
   header a {
     color: white;
     text-decoration: none; }
@@ -73,5 +81,25 @@ header {
     background: #029de5;
     border: 1px solid #029de5;
     color: white; }
+
+.icon {
+  width: 150px;
+  padding-bottom: 4em; }
+
+.center {
+  text-align: center; }
+
+.solid {
+  background-color: #81d6fe; }
+  .solid h2 {
+    color: #0279b1;
+    font-size: 4em;
+    margin-top: 0;
+    padding-top: 60px;
+    margin-bottom: 0px; }
+
+.text {
+  padding-top: 4em;
+  padding-bottom: 4em; }
 
 /*# sourceMappingURL=style.css.map */
