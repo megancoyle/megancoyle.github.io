@@ -1,5 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@-webkit-keyframes pulsate {
+  from {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    opacity: 1; }
+  to {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -30px;
+    opacity: .4; } }
+@-moz-keyframes pulsate {
+  from {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    opacity: 1; }
+  to {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -30px;
+    opacity: .4; } }
+@-o-keyframes pulsate {
+  from {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    opacity: 1; }
+  to {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -30px;
+    opacity: .4; } }
+@keyframes pulsate {
+  from {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    opacity: 1; }
+  to {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -30px;
+    opacity: .4; } }
 body {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif; }
@@ -89,6 +133,23 @@ header {
 .icon {
   width: 150px;
   padding-bottom: 4em; }
+  .icon:hover {
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: pulsate;
+    -moz-animation-name: pulsate;
+    -o-animation-name: pulsate;
+    animation-name: pulsate;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal; }
 
 .center {
   text-align: center; }

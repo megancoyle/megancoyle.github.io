@@ -19,6 +19,60 @@ $accent-color: #029de5;
 $accent-lighter: #81d6fe;
 $accent-darker: #0279b1;
 
+// Animations
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+}
+
+@include keyframes(pulsate) {
+  from {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    opacity: 1;
+  }
+  to {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -30px;
+    opacity: .4;
+  }
+}
+
+@mixin pulsate {
+  @include animate(pulsate, 0.8s, 1, normal);
+}
+
+
 //Styles
 body {
   margin: 0 auto;
@@ -122,6 +176,9 @@ header {
 .icon {
   width: 150px;
   padding-bottom: 4em;
+  &:hover {
+    @include pulsate;
+  }
 }
 .center {
   text-align: center;
